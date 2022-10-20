@@ -1,3 +1,6 @@
+from opcode import hascompare
+
+
 turno_am = 0
 turno_tarde = 0
 turno_noche = 0
@@ -30,3 +33,17 @@ turno_noche = suma/11
 print("El promedio de los alumnos de mañana es ", turno_am)
 print("El promedio de los alumnos de tarde es ", turno_tarde)
 print("El promedio de los alumnos de noche es ", turno_noche)
+
+#cual de los tres turnos tiene edad promedio mayor
+
+if turno_am > turno_tarde and turno_am > turno_noche:
+    print("El turno de mayor edad promedio es el turno de mañana")
+else:
+    if turno_tarde > turno_noche:
+        print("El turno de mayor edad promedio es el turno de tarde")
+    else:
+        print("El turno de mayor edad promedio es el turno de noche")
+
+# Este software sirve para hacer
+# ingreso de promedios por
+# alumnos segun turno
